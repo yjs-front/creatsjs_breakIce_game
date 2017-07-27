@@ -13,7 +13,7 @@ var cjs = window.createjs,
     config = {// 配置信息
         isLogin: false,
         isWexin: /MicroMessenger/i.test(navigator.userAgent),
-        isApp: /yyfax/i.test(navigator.userAgent),
+        isApp: false,
         appVersion: navigator.userAgent.substring(navigator.userAgent.length - 5, navigator.userAgent.length).replace(/[^0-9]/ig, ''),
         playAudio: true,
         inviteFriend: 0,
@@ -47,7 +47,6 @@ util.shareActivity = function(type) {
         mydesc = '我真的赚翻了~，拼手速的时刻你准备好了么？';
     }
 
-    // window.yyfax.util.shareTimeline(mytitle, mylink, myimgUrl, mydesc);
 };
 
 util.showShareMsk = function() {

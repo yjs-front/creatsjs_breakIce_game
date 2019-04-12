@@ -217,22 +217,22 @@ Resource.prototype.loadResource = function(callback) {
             src: 'tick-s14ebc023ff.png', id: 'tick'
         },
         {
-            src: '/js/lib/createjs/tweenjs-0.6.2.min.js', id: 'tween'
+            src: './js/lib/createjs/tweenjs-0.6.2.min.js', id: 'tween'
         },
         {
-            src: '/js/resource/breakIce/bgm.ogg', id: 'bgm'
+            src: './js/resource/breakIce/bgm.ogg', id: 'bgm'
         },
         {
-            src: '/js/resource/breakIce/boom.wav', id: 'boom'
+            src: './js/resource/breakIce/boom.wav', id: 'boom'
         },
         {
-            src: '/js/resource/breakIce/break.wav', id: 'break'
+            src: './js/resource/breakIce/break.wav', id: 'break'
         },
         {
-            src: '/js/resource/breakIce/ycode.wav', id: 'ycode'
+            src: './js/resource/breakIce/ycode.wav', id: 'ycode'
         },
         {
-            src: '/js/resource/breakIce/hit.wav', id: 'hit'
+            src: './js/resource/breakIce/hit.wav', id: 'hit'
         }
     ];
 
@@ -276,7 +276,7 @@ Resource.prototype.loadResource = function(callback) {
     this.preload.on('progress', handleFileProgress);
     this.preload.on('complete', loadComplete);
     this.preload.on('error', loadError);
-    this.preload.loadManifest(manifest, true, '/images/breakIce/');
+    this.preload.loadManifest(manifest, true, './images/breakIce/');
 
 };
 
